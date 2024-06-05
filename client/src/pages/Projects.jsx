@@ -23,7 +23,6 @@ function Projects() {
 
   useEffect(() => {
     Axios.get(YouTubeAPI).then((res) => {
-      console.log(res);
       setVidP1({
         title: res.data.items[0].snippet.title,
         desc: res.data.items[0].snippet.description,

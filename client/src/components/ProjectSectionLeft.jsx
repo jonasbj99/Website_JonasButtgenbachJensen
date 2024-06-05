@@ -1,7 +1,6 @@
 import VideoCard from "./VideoCard.jsx";
 
 function ProjectSectionLeft(project) {
-  console.log(project);
   return (
     <div className="section">
       <div className="projectImg">

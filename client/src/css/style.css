@@ -4,7 +4,7 @@
   --formal-font: sans-serif; /* Find Font */
   --text-col: hsl(0, 0%, 25%); /* Find Color */
   --bg-col: white; /* Find Color */
-  --detail-col: #ffa500; /* Find Color */
+  --detail-col: hsl(39, 100%, 50%); /* Find Color */
   --neutral-col: hsl(0, 0%, 60%); /* Find Color */
   --border-col: hsla(0, 0%, 50%, 0.3);
   --nav-height: 4.5rem;
@@ -63,7 +63,6 @@ header {
 .siteTitle a {
   max-height: var(--nav-height);
   text-decoration: none;
-  color: var(--text-col);
 }
 
 .titleIcon {
@@ -79,21 +78,23 @@ header {
 
 .navList li {
   list-style: none;
+  color: var(--text-col);
 }
 
 .navList li a {
   font-family: var(--main-font);
   font-size: 1.2rem;
-  color: var(--text-col);
   text-decoration: none;
+  color: var(--text-col);
 }
 
 .navList li:hover {
   border-bottom: 1px solid var(--detail-col);
 }
 
-.active {
+.navList li .active {
   color: var(--detail-col);
+  font-weight: bold;
 }
 
 .socials {
@@ -102,6 +103,7 @@ header {
   justify-content: center;
   gap: 1rem;
   margin: 0 100px;
+  padding: 0 50px;
 }
 
 .socials a:hover {
