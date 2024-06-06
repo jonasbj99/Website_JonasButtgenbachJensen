@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const CommentModel = require("./models/Comment.js");
+const CommentModel = require("./schemas/Comment.js");
 
 const app = express();
 app.use(express.json());
@@ -32,5 +32,5 @@ app.post("/createComment", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("SERVER CREATED AT PORT: " + PORT);
+  console.log("SERVER HOSTED AT PORT: " + PORT);
 });

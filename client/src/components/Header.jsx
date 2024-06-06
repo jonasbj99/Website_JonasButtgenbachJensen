@@ -2,7 +2,6 @@ import instaSvg from "../assets/insta.svg";
 import linkedInSvg from "../assets/linkedIn.svg";
 import githubSvg from "../assets/github.svg";
 import JBJIcon from "../assets/pageLogo.svg";
-import { useEffect } from "react";
 
 function Header() {
   return (
@@ -39,7 +38,6 @@ function Header() {
 
 function NavEl({ href, children }) {
   const path = window.location.pathname;
-  console.log(path);
   return (
     <li>
       <a className={path === href ? "active" : ""} href={href}>

@@ -38,7 +38,7 @@ function Guest() {
     <main className="guestMain">
       <div className="createComment glass">
         <input
-        className="commentInput nameInput"
+          className="commentInput nameInput"
           id="nameInput"
           type="text"
           placeholder="Name..."
@@ -47,7 +47,7 @@ function Guest() {
           }}
         />
         <input
-        className="commentInput widerInput"
+          className="commentInput widerInput"
           id="textInput"
           type="text"
           placeholder="Comment..."
@@ -55,7 +55,9 @@ function Guest() {
             setText(event.target.value);
           }}
         />
-        <button className="commentInput" onClick={createComment}>Post</button>
+        <button className="commentInput" onClick={createComment}>
+          Post
+        </button>
       </div>
       <div className="commentSection glass">
         {listOfComments.toReversed().map((comment) => {

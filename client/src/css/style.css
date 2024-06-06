@@ -1,11 +1,11 @@
 :root {
-  --main-font: arial; /* Find Font */
-  --text-font: tahoma; /* Find Font */
-  --formal-font: sans-serif; /* Find Font */
-  --text-col: hsl(0, 0%, 25%); /* Find Color */
-  --bg-col: white; /* Find Color */
-  --detail-col: hsl(39, 100%, 50%); /* Find Color */
-  --neutral-col: hsl(0, 0%, 60%); /* Find Color */
+  --main-font: arial;
+  --text-font: tahoma;
+  --formal-font: sans-serif;
+  --text-col: hsl(0, 0%, 25%);
+  --bg-col: white;
+  --detail-col: hsl(39, 100%, 50%);
+  --neutral-col: hsl(0, 0%, 60%);
   --border-col: hsla(0, 0%, 50%, 0.3);
   --nav-height: 4.5rem;
   --page-height: 50.5rem;
